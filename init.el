@@ -17,6 +17,9 @@
   :link '(url-link "https://github.com/logoraz/guix-craft")
   :group 'emacs)
 
+;; Set the `user-emacs-directory` to a writeable path
+(setq user-emacs-directory "~/.cache/emacs")
+
 (defvar *raz-var-directory* (expand-file-name "var/" user-emacs-directory)
   "Default var directory.")
 
