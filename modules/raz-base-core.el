@@ -93,6 +93,9 @@
 (delete-selection-mode)
 (column-number-mode 1)
 
+(use-package display-line-numbers
+  :hook (prog-mode . display-line-numbers-mode))
+
 (use-package display-fill-column-indicator
   ;; TODO: Customize theme color for this element -> via ':config' keyword
   :diminish
