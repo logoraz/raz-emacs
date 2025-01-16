@@ -23,6 +23,11 @@ FRAME is always set to nil"
     (apply 'set-face-attribute face nil spec)))
 
 
+(defun list->add-to-list (list list-var)
+  "Add list of items to list via`add-to-list'."
+  (dolist (item list)
+    (add-to-list list-var item)))
+
 ;;
 ;; Macros
 ;;
